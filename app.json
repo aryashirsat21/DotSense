@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "DotSense",
+    "slug": "dotsense",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0a0a0f",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "backgroundColor": "#0a0a0f"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.dotsense.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "DotSense uses the camera to scan physical Braille and convert it to English text.",
+        "NSPhotoLibraryUsageDescription": "Upload Braille images from your gallery.",
+        "NSMicrophoneUsageDescription": "Microphone access for audio features."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0a0a0f"
+      },
+      "package": "com.dotsense.app",
+      "permissions": ["CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"]
+    },
+    "plugins": ["expo-camera", "expo-image-picker"]
+  }
+}
